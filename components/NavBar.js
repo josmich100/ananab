@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function NavBar() {
   return (
@@ -48,12 +49,14 @@ function NavBar() {
           >
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
               <li className="mr-3">
-                <a
-                  className="inline-block py-2 px-4 text-black font-bold no-underline"
-                  href="#"
-                >
-                  Active
-                </a>
+                <Link href="/home">
+                  <a
+                    className="inline-block py-2 px-4 text-black font-bold no-underline"
+                    href="#"
+                  >
+                    Active
+                  </a>
+                </Link>
               </li>
               <li className="mr-3">
                 <a

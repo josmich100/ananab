@@ -18,7 +18,7 @@ function Hero() {
               right!
             </p>
             <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Subscribe
+              Login
             </button>
           </div>
 
@@ -27,9 +27,6 @@ function Hero() {
             <img className="w-full md:w-4/5 z-50" src="hero.png" />
           </div>
         </div>
-      </div>
-      <div className="relative -mt-12 lg:-mt-24">
-        <Image src="/hero.svg" alt="Vercel Logo" width={72} height={16} />
       </div>
     </div>
   );
