@@ -2,7 +2,7 @@ import React from "react";
 
 const Section = (props) => {
   return (
-    <div className={`max-w-screen-lg mx-auto px-3 pt-6`}>
+    <div className={`max-w-screen-lg ${props.spacing} mx-auto px-3 pt-6`}>
       {(props.title || props.description) && (
         <div className="mt-5 text-center">
           {props.title && (
