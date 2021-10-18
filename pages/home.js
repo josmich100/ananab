@@ -7,6 +7,7 @@ function home() {
     <div>
       <NavBar />
       <Hero />
+      
     </div>
   );
 }
