@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Form from "../components/LoginForm";
-import fetchJson from "../lib/fetchJson";
 import NavBar from "../components/NavBar";
 import Links from "../components/Links";
 

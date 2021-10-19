@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Form from "../components/RegisterForm2";
-import fetchJson from "../lib/fetchJson";
+
 import NavBar from "../components/NavBar";
 import Links from "../components/Links";
 
