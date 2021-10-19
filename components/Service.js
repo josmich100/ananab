@@ -4,8 +4,8 @@ import ServiceCard from "./ServiceCard";
 const Service = () => {
   return (
     <div>
-      <section class="bg-white border-b py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12 bg-gradient-to-r from-yellow-200 to-yellow-500">
+      <section className="bg-white border-b py-8">
+        <div className="container mx-auto flex flex-wrap pt-4 pb-12 bg-gradient-to-r from-yellow-200 to-yellow-500">
           <ServiceCard
             title="Taxi"
             quiz="are you ready"
