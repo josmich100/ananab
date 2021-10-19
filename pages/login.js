@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Form from "../components/LoginForm";
 import NavBar from "../components/NavBar";
@@ -28,7 +28,7 @@ const Login = () => {
       setErrorMsg(error.data.message);
     }
   }
-  
+
   return (
     <div>
       <NavBar
