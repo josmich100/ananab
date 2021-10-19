@@ -17,7 +17,7 @@ function About() {
       />
       <Section
         spacing="mt-20"
-        title="we are egdauidhaishhsdu"
+        title="We Are The Future"
         description="jikahfdkjhajkfhbjkgbdjskgajfdgbdjsabgjfdgjhf khljdjkahfjkfdashjkfdvhfjkhjkahjkdfhjksfdajkfdhajkfdhjka hhjsdgjsdgbhjgdjdfsgjhfdghjfdghjfdsghjfdghjfdfjdhhf djghdfjghjdf"
       />
 
