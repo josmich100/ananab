@@ -5,40 +5,10 @@ import NavBar from "../components/NavBar";
 import Section from "../components/Section";
 import ServiceCard from "../components/ServiceCard";
 import SplitScreens from "../components/SplitScreens";
-import useUser from "../lib/useUser";
+
 import Form from "../components/ContactForm";
 
 function Contact() {
-  // here we just check if user is already logged in and redirect to profile
-  const { mutateUser } = useUser({
-    redirectTo: "/profile-sg",
-    redirectIfFound: true,
-  });
-
-  const [errorMsg, setErrorMsg] = useState("");
-
-  async function handleSubmit(e) {
-    event.preventDefault();
-
-    const body = {
-      username: e.currentTarget.username.value,
-      password: e.currentTarget.password.value,
-    };
-
-    try {
-      mutateUser(
-        await fetchJson("/api/login", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
-        })
-      );
-    } catch (error) {
-      console.error("An unexpected error happened:", error);
-      setErrorMsg(error.data.message);
-    }
-  }
-
   return (
     <div>
       <NavBar
