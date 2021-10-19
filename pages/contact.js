@@ -9,6 +9,30 @@ import SplitScreens from "../components/SplitScreens";
 import Form from "../components/ContactForm";
 
 function Contact() {
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleSubmit(e) {
+    event.preventDefault();
+
+    const body = {
+      username: e.currentTarget.username.value,
+      password: e.currentTarget.password.value,
+    };
+
+    try {
+      // mutateUser(
+      //   await fetchJson("/api/login", {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/json" },
+      //     body: JSON.stringify(body),
+      //   })
+      // );
+    } catch (error) {
+      console.error("An unexpected error happened:", error);
+      setErrorMsg(error.data.message);
+    }
+  }
+
   return (
     <div>
       <NavBar
