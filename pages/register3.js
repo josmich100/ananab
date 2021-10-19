@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import useUser from "../lib/useUser";
-import Form from "../components/LoginForm";
+import Form from "../components/RegisterForm3";
 import fetchJson from "../lib/fetchJson";
 import NavBar from "../components/NavBar";
 import Links from "../components/Links";
 
-const Login = () => {
+const Register2 = () => {
   // here we just check if user is already logged in and redirect to profile
   const { mutateUser } = useUser({
     redirectTo: "/profile-sg",
@@ -44,8 +44,6 @@ const Login = () => {
           <Links name="Home" dir="/" />,
           <Links name="About" dir="about" />,
           <Links name="Contact" dir="contact" />,
-          <Links name="Driver" dir="register1" />,
-          <Links name="Fleet" dir="register1" />,
         ]}
       />
       <style>
@@ -61,8 +59,10 @@ const Login = () => {
             </div>
             <div className="w-full md:w-1/2 py-10 px-5 md:px-10">
               <div className="text-center mb-10">
-                <h1 className="font-bold text-3xl text-gray-900">Login</h1>
-                <p>Enter your information to sign in</p>
+                <h1 className="font-bold text-3xl text-gray-900">
+                  Legal Information
+                </h1>
+                <p>Enter your information to register</p>
               </div>
               <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
             </div>
@@ -73,4 +73,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register2;
