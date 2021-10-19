@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  webpack5: true ,
+  webpack5: false ,
 };
