@@ -37,7 +37,7 @@ const Login = () => {
 
   return (
     <Layout>
-      <div className="login">
+      <div classNameName="login">
         <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
       </div>
       <style jsx>{`

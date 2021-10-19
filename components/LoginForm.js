@@ -14,7 +14,7 @@ const LoginForm = ({ errorMessage, onSubmit }) => (
 
     <button type="submit">Login</button>
 
-    {errorMessage && <p className="error">{errorMessage}</p>}
+    {errorMessage && <p classNameName="error">{errorMessage}</p>}
 
     <style jsx>{`
       form,
