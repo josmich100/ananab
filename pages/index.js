@@ -1,9 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/Hero";
+import Links from "../components/Links";
 import NavBar from "../components/NavBar";
 import Section from "../components/Section";
 import Service from "../components/Service";
+import ServiceCard from "../components/ServiceCard";
+import SplitScreens from "../components/SplitScreens";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -16,11 +19,25 @@ export default function Home() {
       </Head>
 
       <main>
-        <NavBar />
+        <NavBar
+          children={[
+            <Links name="About" dir="about" />,
+            <Links name="Contact" dir="contact" />,
+          ]}
+        />
         <Hero />
         <Section title="Services" description="what we offer" />
         <Service />
         <Section title="About Us" description="Who we are" />
+        <SplitScreens
+          children={[
+            <ServiceCard
+              btnName="Talk to us"
+              description="Good things happen when people can move, whether across town or toward their dreams. Opportunities appear, open up, become reality. What started as a way to tap a button to get a ride has led to billions of moments of human connection as people around the world go all kinds of places in all kinds of ways with the help of our technology."
+            />,
+            <img className="w-full md:w-4/5 z-50" src="hero.png" />,
+          ]}
+        />
 
         {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>

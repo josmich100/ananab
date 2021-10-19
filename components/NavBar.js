@@ -1,16 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import useUser from "../lib/useUser";
-import { useRouter } from "next/router";
-import fetchJson from "../lib/fetchJson";
 
-function NavBar() {
-  const { user, mutateUser } = useUser();
-  const router = useRouter();
+import Links from "./Links";
+
+const NavBar=(props)=> {
   return (
     <div>
-      <nav id="header" className="fixed w-full z-30 top-0 text-white">
+      <nav id="header" className={`fixed w-full ${props.background} z-30 top-0 text-white`}>
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
             <a
@@ -49,96 +45,16 @@ function NavBar() {
             </button>
           </div>
           <div
-            className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-            id="nav-content"
+            className="w-full flex-shrink lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
           >
-            <ul className="list-reset lg:flex justify-end flex-1 items-center">
-              {!user?.isLoggedIn && (
-                <>
-                  <li className="font-bold mx-4">
-                    <Link
-                      className="inline-block py-2 px-4 text-black font-bold no-underline"
-                      href="/home"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li className="font-bold mx-4">
-                    <Link
-                      className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                      href="/about"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li className="font-bold mx-4">
-                    <Link
-                      className="inline-block text-black hover:text-gray-800 hover:text-underline py-2 px-4"
-                      href="/contact"
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                  <li className="font-bold mx-4">
-                    <Link
-                      className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                      href="/login"
-                    >
-                      <button
-                        id="navAction"
-                        className="mx-auto lg:mx-0 bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                      >
-                        Login
-                      </button>
-                    </Link>
-                  </li>
-                </>
-              )}
-              {user?.isLoggedIn && (
-                <>
-                  <li className="mr-3">
-                    <Link href="/home">
-                      <a
-                        className="inline-block py-2 px-4 text-black font-bold no-underline"
-                        href="#"
-                      >
-                        Active
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mr-3">
-                    <Link href="/about">
-                      <a
-                        className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                        href="#"
-                      >
-                        About Us
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mr-3">
-                    <Link href="/register">
-                      <a
-                        className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                        href="#"
-                      >
-                        Register
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mr-3">
-                    <Link href="/login">
-                      <a
-                        className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                        href="#"
-                      >
-                        Login
-                      </a>
-                    </Link>
-                  </li>
-                </>
-              )}
-            </ul>
+          {props.children}
+            
+            <button
+              id="navAction"
+              className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              Login
+            </button>
           </div>
         </div>
         <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
