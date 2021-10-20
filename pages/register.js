@@ -61,9 +61,12 @@ const Register = () => {
                     <a href="renterapp">Download Ananab Renter App</a>
                   </button>
 
-                  <p className="text-black text-2xl my-3">
+                  <p className="text-gray-700 text-2xl my-3">
                     Read our{" "}
-                    <a href="/terms" className="font-bold underline">
+                    <a
+                      href="/terms"
+                      className="text-blue-500 underline font-bold hover:text-black"
+                    >
                       terms and conditions
                     </a>
                   </p>
