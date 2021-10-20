@@ -12,41 +12,54 @@ function About() {
         background="bg-yellow-400"
         children={[
           <Links name="Home" dir="/" />,
+          <Links name="About" dir="about" />,
           <Links name="Contact" dir="contact" />,
         ]}
       />
+      <style>
+        @import
+        url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
+      </style>
+
       <Section
-        spacing="mt-20"
+        spacing="my-20"
         title="We Are The Future"
-        description="jikahfdkjhajkfhbjkgbdjskgajfdgbdjsabgjfdgjhf khljdjkahfjkfdashjkfdvhfjkhjkahjkdfhjksfdajkfdhajkfdhjka hhjsdgjsdgbhjgdjdfsgjhfdghjfdghjfdsghjfdghjfdfjdhhf djghdfjghjdf"
+        description="Ananab is a company developed to curb the technology gap in providing innovative ideas to suit public demands. It was established out of a desire to provide instant transport services by a click or touch to offer new opportunities to the desiring public to meet demand and control expectation hence making public transport reliable."
       />
 
       <SplitScreens
         children={[
-          <img className="w-full md:w-2/5 z-50" src="hero.png" />,
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink ">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-xl">
-              <div className="flex flex-col bg-white p-8">
-                <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-5">
-                    <h5 className="font-bold">Call or Text Us</h5>
-                    <p className="text-lg mb-5">
-                      <i class="mdi mdi-phone text-2xl"></i>
-                      +254 *** *** ***
-                    </p>
-                    <h5 className="font-bold">Email Us</h5>
-                    <p className="text-lg mb-5">
-                      <i class="mdi mdi-email text-2xl"></i> ananab@mail.com
-                    </p>
-                    <h5 className="font-bold">Visit Us</h5>
-                    <p className="text-lg mb-5">
-                      <i class="mdi mdi-map text-2xl"></i> 254, Kenya
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <img className="w-full md:w-3/5" src="hero.png" />,
+          <div className="w-full md:w-2/5 p-6 flex flex-col flex-grow flex-shrink ">
+            <div className="flex-1 bg-white overflow-hidden shadow-xl p-8 -mx-3">
+              <h5 className="text-3xl text-gray-800 font-bold py-3">
+                Earn As You Drive
+              </h5>
+              <p className="text-lg text-gray-800 mb-5">
+                Ananab is partnering with individuals who desire to make a
+                living by picking clients and dropping them at their desired
+                points. Ananab will provide its clients (passengers) to our
+                partners (drivers) at demand.
+              </p>
             </div>
           </div>,
+        ]}
+      />
+
+      <SplitScreens
+        children={[
+          <div className="w-full md:w-2/5 p-6 flex flex-col flex-grow flex-shrink ">
+            <div className="flex-1 bg-white overflow-hidden shadow-xl p-8 -mx-3">
+              <h5 className="text-3xl text-gray-800 font-bold py-3">
+                Earn By Renting Your Car
+              </h5>
+              <p className="text-lg text-gray-800 mb-5">
+                Ananab is offering opportunities to individuals who wish to rent
+                out their vehicles to our clients to earn money.
+              </p>
+            </div>
+          </div>,
+          <img className="w-full md:w-3/5" src="hero.png" />,
         ]}
       />
     </div>

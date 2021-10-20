@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="bg-yellow-400">
+    <div className="h-full bg-yellow-400">
       <div className="pt-24">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -12,7 +12,7 @@ function Hero() {
               The Future of Transport Services
             </p>
             <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Register Now
+              <a href="/register">Register Now</a>
             </button>
           </div>
 

@@ -37,8 +37,6 @@ const Login = () => {
           <Links name="Home" dir="/" />,
           <Links name="About" dir="about" />,
           <Links name="Contact" dir="contact" />,
-          <Links name="Driver" dir="register1" />,
-          <Links name="Fleet" dir="register1" />,
         ]}
       />
       <style>

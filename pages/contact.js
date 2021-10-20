@@ -40,6 +40,7 @@ function Contact() {
         children={[
           <Links name="Home" dir="/" />,
           <Links name="About" dir="about" />,
+          <Links name="Contact" dir="contact" />,
         ]}
       />
       <style>
@@ -64,16 +65,16 @@ function Contact() {
                   <div className="w-full px-3 mb-5">
                     <h5 className="font-bold">Call or Text Us</h5>
                     <p className="text-lg mb-5">
-                      <i class="mdi mdi-phone text-2xl"></i>
+                      <i className="mdi mdi-phone text-2xl"></i>
                       +254 *** *** ***
                     </p>
                     <h5 className="font-bold">Email Us</h5>
                     <p className="text-lg mb-5">
-                      <i class="mdi mdi-email text-2xl"></i> ananab@mail.com
+                      <i className="mdi mdi-email text-2xl"></i> ananab@mail.com
                     </p>
                     <h5 className="font-bold">Visit Us</h5>
                     <p className="text-lg mb-5">
-                      <i class="mdi mdi-map text-2xl"></i> 254, Kenya
+                      <i className="mdi mdi-map text-2xl"></i> 254, Kenya
                     </p>
                   </div>
                 </div>
