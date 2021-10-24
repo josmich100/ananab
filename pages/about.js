@@ -23,7 +23,7 @@ function About() {
 
       <Section
         spacing="my-20"
-        title="We Are The Future"
+        title="Building and Supporting Dreams"
         description="Ananab is a company developed to curb the technology gap in providing innovative ideas to suit public demands. It was established out of a desire to provide instant transport services by a click or touch to offer new opportunities to the desiring public to meet demand and control expectation hence making public transport reliable."
       />
 

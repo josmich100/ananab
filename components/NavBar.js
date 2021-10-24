@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 import Links from "./Links";
@@ -13,7 +13,7 @@ const NavBar = (props) => {
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
             <a
-              className="toggleColour relative text-white no-underline hover:no-underline font-bold text-6xl"
+              className="toggleColour relative text-white no-underline hover:no-underline font-bold text-7xl"
               href="/"
             >
               <Image
@@ -32,6 +32,7 @@ const NavBar = (props) => {
               ANANAB
             </a>
           </div>
+
           <div className="block lg:hidden pr-4">
             <button
               id="nav-toggle"
@@ -48,7 +49,7 @@ const NavBar = (props) => {
             </button>
           </div>
 
-          <div className="w-full flex-shrink lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20">
+          <div className="w-full flex-shrink lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-yellow-400 text-black p-4 lg:p-0 z-20">
             {props.children}
 
             {/* <a

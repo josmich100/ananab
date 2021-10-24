@@ -44,14 +44,21 @@ const Register = () => {
 
                 <div className="p-4 rounded-xl shadow-xl">
                   <p className="text-xl font-bold text-gray-900">
-                    To sign up now,
+                    To sign up as a driver or renter,
                   </p>
 
                   <button
                     type="button"
                     className="mx-auto lg:mx-0 gradient text-black text-xl font-bold rounded-full my-3 py-3 px-10 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                   >
-                    <a href="driverapp">Download Ananab App</a>
+                    <a href="driverapp">Download Ananab Driver App</a>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="mx-auto lg:mx-0 gradient text-black text-xl font-bold rounded-full mb-3 py-3 px-10 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                  >
+                    <a href="renterapp">Download Ananab Renter App</a>
                   </button>
 
                   <p className="text-gray-700 text-2xl my-3 p-4">
