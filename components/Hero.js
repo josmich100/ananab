@@ -7,7 +7,7 @@ function Hero() {
       <div className="pt-24">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-            <h1 className="mb-10 text-5xl font-bold leading-tight">
+            <h1 className="mb-10 text-4xl font-bold leading-tight">
               Comfortable, Fast & Efficient
             </h1>
             <p className="leading-normal text-2xl mb-8">
