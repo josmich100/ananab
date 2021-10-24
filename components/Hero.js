@@ -11,8 +11,8 @@ function Hero() {
               Comfortable, Fast & Efficient
             </h1>
             <p className="leading-normal text-2xl mb-8">
-              Wonderful transportation services by amazing professional drivers
-              for awesome clientele connected by the most deserving Ananab app.{" "}
+              Wonderful transportation services by amazing service providers for
+              awesome clientele connected by the most deserving Ananab app.{" "}
               <br />
             </p>
             <p className="text-2xl font-bold">At service every single day.</p>
