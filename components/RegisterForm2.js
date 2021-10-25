@@ -80,7 +80,7 @@ const RegisterForm2 = ({ errorMessage, onSubmit }) => (
 
     <button
       type="submit"
-      className="mx-auto lg:mx-0 hover:underline gradient text-black font-bold rounded-full my-6 py-4 px-8 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      className="mx-auto lg:mx-0  gradient text-black font-bold rounded-full my-6 py-4 px-8 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
     >
       <a href="register3">Last Step</a>
     </button>

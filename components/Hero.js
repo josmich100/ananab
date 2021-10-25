@@ -16,7 +16,7 @@ function Hero() {
               <br />
               <p className="text-2xl font-bold">At service every single day.</p>
             </p>
-            <button className="text-xl mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <button className="text-xl mx-auto lg:mx-0  bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
               <a href="/register">Register Now</a>
             </button>
           </div>
