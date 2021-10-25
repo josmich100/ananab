@@ -12,7 +12,7 @@ function About() {
         background="bg-yellow-400"
         children={[
           <Links name="Home" dir="/" />,
-          <Links name="About" dir="about" active="underline" />,
+          <Links name="About" dir="about" active="text-white" />,
           <Links name="Contact" dir="contact" />,
         ]}
       />

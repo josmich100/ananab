@@ -18,7 +18,7 @@ export default function Home() {
         <NavBar
           background="bg-yellow-400"
           children={[
-            <Links name="Home" dir="/" />,
+            <Links name="Home" dir="/" active="text-white" />,
             <Links name="About" dir="about" />,
             <Links name="Contact" dir="contact" />,
           ]}

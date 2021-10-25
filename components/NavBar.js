@@ -77,7 +77,7 @@ const NavBar = (props) => {
             <a
               href="/login"
               id="navAction"
-              className="mx-auto lg:mx-1 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-3 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              className="mx-auto lg:mx-1 bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-3 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-110 duration-300 ease-in-out"
             >
               Login
             </a>

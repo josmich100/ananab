@@ -40,7 +40,7 @@ function Contact() {
         children={[
           <Links name="Home" dir="/" />,
           <Links name="About" dir="about" />,
-          <Links name="Contact" dir="contact" />,
+          <Links name="Contact" dir="contact" active="text-white" />,
         ]}
       />
       <style>
