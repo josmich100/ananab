@@ -50,17 +50,17 @@ function Contact() {
 
       <Section spacing="my-12" title="Contact Us" />
       <SplitScreens
-        background="bg-gradient-to-r from-yellow-500 to-yellow-200"
+        // background="bg-gradient-to-r from-yellow-500 to-yellow-200"
         children={[
-          <img className="w-full md:w-2/5 z-50" src="hero.png" />,
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink ">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-xl">
+          <img className="w-full md:w-1/3 z-1" src="hero.png" />,
+          <div className="w-full md:w-2/3 flex flex-col flex-grow flex-shrink ">
+            <div className="flex-1 bg-white rounded overflow-hidden shadow-2xl">
               <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
             </div>
           </div>,
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink ">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-xl">
-              <div className="flex flex-col bg-white p-8">
+          <div className="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink ">
+            <div className="flex-1 bg-white rounded overflow-hidden shadow-2xl">
+              <div className="flex flex-col bg-white p-5">
                 <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
                     <h5 className="font-bold">Call or Text Us</h5>

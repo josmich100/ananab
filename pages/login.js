@@ -44,7 +44,7 @@ const Login = () => {
         url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
       </style>
 
-      <div className="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center px-5 py-5">
+      <div className="min-w-screen min-h-screen bg-gray-900 flex items-center justify-center p-5">
         <div className="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden max-w-full">
           <div className="md:flex w-full">
             <div className="hidden md:block w-1/2 bg-yellow-400 py-10 px-10">

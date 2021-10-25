@@ -12,7 +12,7 @@ function About() {
         background="bg-yellow-400"
         children={[
           <Links name="Home" dir="/" />,
-          <Links name="About" dir="about" />,
+          <Links name="About" dir="about" active="underline" />,
           <Links name="Contact" dir="contact" />,
         ]}
       />
@@ -29,7 +29,7 @@ function About() {
 
       <SplitScreens
         children={[
-          <img className="w-full md:w-3/5" src="hero.png" />,
+          <img className="w-full md:w-3/5 z-1" src="hero.png" />,
           <div className="w-full md:w-2/5 p-6 flex flex-col flex-grow flex-shrink ">
             <div className="flex-1 bg-white overflow-hidden shadow-xl p-8 -mx-3">
               <h5 className="text-3xl text-gray-800 font-bold py-3">

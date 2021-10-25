@@ -15,6 +15,13 @@ a {
   box-sizing: border-box;
 }
 
+
+/* Dropdown */
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+} */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

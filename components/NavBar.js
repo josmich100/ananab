@@ -4,11 +4,17 @@ import Image from "next/image";
 import Links from "./Links";
 
 const NavBar = (props) => {
+  const data = props.children;
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const handleToggle = () => {
+    setNavbarOpen((prev) => !prev);
+  };
+
   return (
     <div>
       <nav
         id="header"
-        className={`fixed w-full ${props.background} z-30 top-0 text-white`}
+        className={`fixed w-full ${props.background} z-30 top-0 text-white text-lg font-bold`}
       >
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
@@ -33,10 +39,11 @@ const NavBar = (props) => {
             </a>
           </div>
 
-          <div className="block lg:hidden pr-4">
+          <div className="dropdown inline-block relative block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              className="flex items-center p-1 text-white transform transition hover:scale-110 duration-300 ease-in-out"
+              onClick={handleToggle}
             >
               <svg
                 className="fill-current h-6 w-6"
@@ -47,11 +54,19 @@ const NavBar = (props) => {
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
               </svg>
             </button>
+            {navbarOpen && (
+              <ul className="dropdown-menu absolute right-1 text-lg text-white hover:text-yellow-500 font-bold z-50">
+                {data.map((item) => (
+                  <li className="rounded bg-yellow-300 hover:bg-yellow-200 py-2 px-3 m-0 block whitespace-no-wrap">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
 
           <div className="w-full flex-shrink lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-yellow-400 text-black p-4 lg:p-0 z-20">
-            {props.children}
-
+            {data}
             {/* <a
               href="/register"
               id="navAction"
@@ -68,7 +83,7 @@ const NavBar = (props) => {
             </a>
           </div>
         </div>
-        <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
+        {/* <hr className="border-b border-gray-100 opacity-25 my-0 py-0" /> */}
       </nav>
     </div>
   );

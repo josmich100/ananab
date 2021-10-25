@@ -25,20 +25,6 @@ export default function Home() {
         />
         <Hero />
       </main>
-
-      <footer className="bg-yellow-400">
-        <a
-          className="text-xl text-gray-900"
-          href="https://michina.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <img src="/ananab.svg" width="150" height="40" />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 }
