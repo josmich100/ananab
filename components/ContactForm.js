@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const RegisterForm1 = ({ errorMessage, onSubmit }) => (
   <form className="flex flex-col bg-white p-4" onSubmit={onSubmit}>
+    <h5 className="text-gray-900 text-3xl font-bold px-1 py-4">Contact Form</h5>
     <div class="flex -mx-3">
       <div class="w-full px-3 mb-5">
         <label for="" class="text-xs font-semibold px-1">
@@ -62,9 +63,9 @@ const RegisterForm1 = ({ errorMessage, onSubmit }) => (
 
     <button
       type="submit"
-      className="mx-auto lg:mx-0  gradient text-black font-bold rounded-full my-6 py-4 px-8 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      className="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-2 py-2 px-4 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
     >
-      <a href="register2">Next Step</a>
+      <a href="register2">Send Message</a>
     </button>
 
     {errorMessage && <p className="text-red-500 m-1">{errorMessage}</p>}

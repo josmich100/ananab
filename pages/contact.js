@@ -36,11 +36,11 @@ function Contact() {
   return (
     <div>
       <NavBar
-        background="bg-yellow-400"
+        background="bg-gray-800"
         children={[
           <Links name="Home" dir="/" />,
           <Links name="About" dir="about" />,
-          <Links name="Contact" dir="contact" active="text-white" />,
+          <Links name="Contact" dir="contact" active="text-yellow-300" />,
         ]}
       />
       <style>
@@ -48,38 +48,60 @@ function Contact() {
         url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
       </style>
 
-      <Section spacing="my-12" title="Contact Us" />
+      <Section spacing="mt-20 mb-5" title="Contact Us" />
+
       <SplitScreens
         // background="bg-gradient-to-r from-yellow-500 to-yellow-200"
         children={[
-          <img className="w-full md:w-1/3 z-1" src="hero.png" />,
-          <div className="w-full md:w-2/3 flex flex-col flex-grow flex-shrink ">
-            <div className="flex-1 bg-white rounded overflow-hidden shadow-2xl">
-              <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
-            </div>
-          </div>,
-          <div className="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink ">
-            <div className="flex-1 bg-white rounded overflow-hidden shadow-2xl">
+          <img
+            className="w-full md:w-1/2 bg-gray-100 rounded-lg shadow-lg m-3 z-1"
+            src="phone.jpg"
+          />,
+          <div className="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 text-center bg-white rounded overflow-hidden p-5 rounded-xl shadow-2xl">
+              <h5 className="text-gray-900 text-3xl font-bold underline p-3">
+                Contact Details
+              </h5>
               <div className="flex flex-col bg-white p-5">
                 <div className="flex -mx-3">
                   <div className="w-full px-3 mb-5">
-                    <h5 className="font-bold">Call or Text Us</h5>
-                    <p className="text-lg mb-5">
-                      <i className="mdi mdi-phone text-2xl"></i>
-                      +254 *** *** ***
+                    <h5 className="text-gray-900 text-2xl font-bold">
+                      <i className="mdi mdi-phone"></i> Call/Text
+                    </h5>
+                    <p className="text-gray-700 text-xl mb-4">
+                      <a href="tel:+254717101257">+254 717 101 257</a>
                     </p>
-                    <h5 className="font-bold">Email Us</h5>
-                    <p className="text-lg mb-5">
-                      <i className="mdi mdi-email text-2xl"></i> ananab@mail.com
+                    <h5 className="text-gray-900 text-2xl font-bold">
+                      <i className="mdi mdi-email"></i> Email
+                    </h5>
+                    <p className="text-blue-500 text-xl mb-4">
+                      <a href="mailto:+254717101257">ananabcabs@gmail.com</a>
                     </p>
-                    <h5 className="font-bold">Visit Us</h5>
-                    <p className="text-lg mb-5">
-                      <i className="mdi mdi-map text-2xl"></i> 254, Kenya
+                    <h5 className="text-gray-900 text-2xl font-bold">
+                      <i className="mdi mdi-map"></i> Visit
+                    </h5>
+                    <p className="text-gray-900 text-xl mt-4">
+                      <a
+                        target="_blank"
+                        href="https://www.google.com/maps/place/KESA+School/@-0.7862388,34.9594096,15.38z/data=!4m5!3m4!1s0x0:0xa5aea9b9be68a811!8m2!3d-0.7785774!4d34.9634662"
+                        className="mx-auto bg-gray-600 hover:bg-gray-800 text-white rounded-lg my-2 py-2 px-4 shadow-lg"
+                      >
+                        View on Map
+                      </a>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>,
+        ]}
+      />
+
+      <SplitScreens
+        // background="bg-gradient-to-r from-yellow-500 to-yellow-200"
+        children={[
+          <div className="w-full md:w-2/3 bg-white rounded overflow-hidden p-4 rounded-xl shadow-2xl">
+            <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
           </div>,
         ]}
       />

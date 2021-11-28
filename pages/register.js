@@ -31,7 +31,7 @@ const Register = () => {
 
                 <div className="flex flex-row my-12 mx-8 p-5 border border-1 rounded-xl shadow-lg">
                   <div className="flex-col w-1/3 mx-2">
-                    <i className="mdi mdi-map-marker-outline text-black text-8xl"></i>
+                    <i className="mdi mdi-map-marker-outline text-gray-900 text-8xl"></i>
                   </div>
                   <div className="flex-col w-2/3 mx-2">
                     <p className="text-xl font-bold text-gray-900">
@@ -49,7 +49,7 @@ const Register = () => {
 
                   <button
                     type="button"
-                    className="mx-auto lg:mx-0 gradient text-black text-xl font-bold rounded-full my-3 py-3 px-10 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    className="mx-auto lg:mx-0 gradient text-gray-900 text-xl font-bold rounded-full my-3 py-3 px-10 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                   >
                     <a href="driverapp">Download Ananab App</a>
                   </button>
@@ -58,7 +58,7 @@ const Register = () => {
                     Read our{" "}
                     <a
                       href="/terms"
-                      className="text-blue-500 underline font-bold hover:text-black"
+                      className="text-blue-500 underline font-bold hover:text-gray-900"
                     >
                       terms and conditions
                     </a>
