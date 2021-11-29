@@ -30,7 +30,7 @@ export default function Home() {
               <div className="flex flex-col w-full md:w-3/5 py-4 text-center">
                 <img
                   className="bg-gray-100 rounded-xl shadow-lg mx-2 lg:mx-10"
-                  src="road-trip.jpg"
+                  src="driver-door.jpg"
                 />
               </div>
 
