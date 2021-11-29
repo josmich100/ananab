@@ -58,7 +58,7 @@ const Register = () => {
                     Read our{" "}
                     <a
                       href="/terms"
-                      className="text-blue-500 underline font-bold hover:text-gray-900"
+                      className="text-blue-500 underline font-bold hover:text-gray-800"
                     >
                       terms and conditions
                     </a>

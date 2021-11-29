@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const RegisterForm1 = ({ errorMessage, onSubmit }) => (
-  <form className="flex flex-col bg-white p-4" onSubmit={onSubmit}>
-    <h5 className="text-gray-900 text-3xl font-bold px-1 py-4">Contact Form</h5>
+const ContactForm = ({ errorMessage, onSubmit }) => (
+  <form className="flex flex-col p-10" onSubmit={onSubmit}>
+    <h5 className="text-3xl text-center font-bold">Contact Form</h5>
     <div class="flex -mx-3">
       <div class="w-full px-3 mb-5">
         <label for="" class="text-xs font-semibold px-1">
@@ -14,7 +14,7 @@ const RegisterForm1 = ({ errorMessage, onSubmit }) => (
             <i class="mdi mdi-account-outline text-gray-400 text-lg"></i>
           </div>
           <input
-            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-yellow-500"
+            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-500"
             type="text"
             name="name"
             placeholder="Your name"
@@ -33,7 +33,7 @@ const RegisterForm1 = ({ errorMessage, onSubmit }) => (
             <i class="mdi mdi-email-outline text-gray-400 text-lg"></i>
           </div>
           <input
-            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-yellow-500"
+            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-500"
             type="email"
             name="email"
             placeholder="Your email address"
@@ -52,7 +52,7 @@ const RegisterForm1 = ({ errorMessage, onSubmit }) => (
             <i class="mdi mdi-comment-outline text-gray-400 text-lg"></i>
           </div>
           <textarea
-            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-yellow-500"
+            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-500"
             name="message"
             placeholder="Your message"
             required
@@ -63,7 +63,7 @@ const RegisterForm1 = ({ errorMessage, onSubmit }) => (
 
     <button
       type="submit"
-      className="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-2 py-2 px-4 bg-gradient-to-r from-yellow-200 to-yellow-500 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      className="mx-auto lg:mx-0 bg-gray-700 hover:bg-gray-800 text-white text-lg font-extrabold rounded py-2 px-4 shadow-lg"
     >
       <a href="register2">Send Message</a>
     </button>
@@ -72,9 +72,9 @@ const RegisterForm1 = ({ errorMessage, onSubmit }) => (
   </form>
 );
 
-export default RegisterForm1;
+export default ContactForm;
 
-RegisterForm1.propTypes = {
+ContactForm.propTypes = {
   errorMessage: PropTypes.string,
   onSubmit: PropTypes.func,
 };

@@ -69,25 +69,13 @@ function Contact() {
                       <i className="mdi mdi-phone"></i> Call/Text
                     </h5>
                     <p className="text-gray-700 text-xl mb-4">
-                      <a href="tel:+254717101257">+254 717 101 257</a>
+                      <a href="tel:+254717101257">+254 7-- --- ---</a>
                     </p>
                     <h5 className="text-gray-900 text-2xl font-bold">
                       <i className="mdi mdi-email"></i> Email
                     </h5>
                     <p className="text-blue-500 text-xl mb-4">
                       <a href="mailto:+254717101257">ananabcabs@gmail.com</a>
-                    </p>
-                    <h5 className="text-gray-900 text-2xl font-bold">
-                      <i className="mdi mdi-map"></i> Visit
-                    </h5>
-                    <p className="text-gray-900 text-xl mt-4">
-                      <a
-                        target="_blank"
-                        href="https://www.google.com/maps/place/KESA+School/@-0.7862388,34.9594096,15.38z/data=!4m5!3m4!1s0x0:0xa5aea9b9be68a811!8m2!3d-0.7785774!4d34.9634662"
-                        className="mx-auto bg-gray-600 hover:bg-gray-800 text-white rounded-lg my-2 py-2 px-4 shadow-lg"
-                      >
-                        View on Map
-                      </a>
                     </p>
                   </div>
                 </div>

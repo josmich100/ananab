@@ -9,7 +9,7 @@ const Links = (props) => {
       >
         <Link
           href={props.dir}
-          className={`inline-block py-2 px-4 text-white font-bold no-underline`}
+          className={`inline-block py-2 px-4 font-bold no-underline`}
         >
           {props.name}
         </Link>
