@@ -84,12 +84,13 @@ const NavBar = (props) => {
               url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
             </style>
 
-            <button
-              class="rounded-full p-3"
+            <a
+              href="#"
+              class="bg-gray-700 hover:bg-gray-800 text-lg text-white rounded-full p-2 h-10 w-10 flex items-center justify-center"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              <i className="mdi mdi-moon text-black text-2xl"></i>
-            </button>
+              <i className="mdi mdi-sun text-2xl"></i>
+            </a>
           </div>
         </div>
       </nav>

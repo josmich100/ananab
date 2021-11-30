@@ -5,8 +5,8 @@ import Hero from "../components/Hero";
 import Links from "../components/Links";
 import NavBar from "../components/NavBar";
 import Form from "../components/ContactForm";
-import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   useEffect(() => {
@@ -97,36 +97,15 @@ export default function Home() {
         <div class="container mx-auto h-full">
           <div class="text-center px-3 lg:px-0">
             <h1 class="my-2 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-              Ananab Cabs
+              Support
             </h1>
-            <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
-              Comfortable, Fast & Efficient
-            </p>
-            <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
-              Share this app with your loved ones who would love to use our
-              services... Share this with love for awesome services...
-            </p>
-
-            <a
-              href="#about"
-              class="mx-auto lg:mx-0 bg-gray-700 hover:bg-gray-800 text-lg text-white font-extrabold rounded py-3 px-6 shadow-lg w-32"
-            >
-              Learn More
-            </a>
-          </div>
-
-          <div class="flex items-center w-full mx-auto content-end">
-            <img
-              class="browser-mockup flex flex-1 m-6 md:px-0 md:m-12 w-1/2 rounded shadow-xl"
-              src="driver-door.jpg"
-            />
           </div>
         </div>
 
-        <section id="about" class="border-b py-8">
+        <section id="howto" class="border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
             <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
-              About
+              How To
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -141,67 +120,73 @@ export default function Home() {
                 desiring public to meet demand and control expectation hence
                 making public transport reliable.
               </h3>
-
-              <div class="w-5/6 sm:w-1/2 p-6">
-                <h3 class="text-3xl font-bold leading-none mb-3">
-                  Earn As You Drive
-                </h3>
-                <p class="text-lg mb-8">
-                  Ananab is partnering with individuals who desire to make a
-                  living by picking clients and dropping them at their desired
-                  points. Ananab will provide its clients (passengers) to our
-                  partners (drivers) at demand.
-                  <br />
-                  <br />
-                  Images from:
-                  <a
-                    class="text-orange-500 underline"
-                    href="https://undraw.co/"
-                  >
-                    undraw.co
-                  </a>
-                </p>
-              </div>
-              <div class="w-full sm:w-1/2 p-6">
-                <img
-                  src="taxi-driver.jpg"
-                  class="w-full rounded-lg shadow-lg"
-                />
-              </div>
             </div>
 
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-              <div class="w-full sm:w-1/2 p-6 mt-6">
-                <img src="car-deal.jpg" class="w-full rounded-lg shadow-lg" />
-              </div>
-              <div class="w-full sm:w-1/2 p-6 mt-6">
-                <div class="align-middle">
-                  <h3 class="text-3xl font-bold leading-none mb-3">
-                    Earn By Renting Your Car
-                  </h3>
-                  <p class="text-lg mb-8">
-                    Ananab is offering opportunities to individuals who wish to
-                    rent out their vehicles to our clients to earn money.
-                    <br />
-                    <br />
-                    Images from:
-                    <a
-                      class="text-orange-500 underline"
-                      href="https://undraw.co/"
-                    >
-                      undraw.co
-                    </a>
-                  </p>
-                </div>
-              </div>
+            <h4 class="my-4 text-lg md:text-xl font-bold">Downloads</h4>
+            <p class="mt-2 text-lg md:text-xl">
+              <a
+                href="CustomerManual.pdf"
+                class="text-yellow-400 text-lg font-bold hover:underline"
+                download
+              >
+                Customers' Manual
+              </a>
+            </p>
+            <p class="mt-2 text-lg md:text-xl">
+              <a
+                href="DriverManual.pdf"
+                class="text-yellow-400 text-lg font-bold hover:underline"
+                download
+              >
+                Drivers' Manual
+              </a>
+            </p>
+            <p class="mt-2 text-lg md:text-xl">
+              <a
+                href="RenterManual.pdf"
+                class="text-yellow-400 text-lg font-bold hover:underline"
+                download
+              >
+                Renters' Manual
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section id="faqs" class="border-b py-8">
+          <div class="container max-w-5xl mx-auto m-8">
+            <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
+              FAQs (Frequently Asked Questions)
+            </h2>
+            <div class="w-full mb-4">
+              <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
+
+            <div class="flex flex-wrap">
+              <h3 class="my-4 text-lg md:text-xl text-center">
+                Ananab is a company developed to curb the technology gap in
+                providing innovative ideas to suit public demands. It was
+                established out of a desire to provide instant transport
+                services by a click or touch to offer new opportunities to the
+                desiring public to meet demand and control expectation hence
+                making public transport reliable.
+              </h3>
+            </div>
+
+            <h4 class="my-4 text-lg md:text-xl font-bold">Q&A</h4>
+            <p class="m-2 font-bold">Question #1</p>
+            <p class="m-2 italic">Answer</p>
+            <p class="m-2 font-bold">Question #2</p>
+            <p class="m-2 italic">Answer</p>
+            <p class="m-2 font-bold">Question #3</p>
+            <p class="m-2 italic">Answer</p>
           </div>
         </section>
 
         <section id="contact" class="border-b py-8">
           <div class="container mx-auto flex flex-wrap pt-4 pb-12">
             <h2 class="w-full my-2 text-3xl md:text-4xl font-black leading-tight text-center">
-              Contact
+              Ask a Question
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -242,19 +227,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="gradient w-full mx-auto text-center pt-6 pb-12 border-b">
-          <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
-            Call to Action
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-
-          <h3 class="my-4 text-3xl font-extrabold">
-            Ananab: Comfortable, Fast & Efficient
-          </h3>
         </section>
 
         <Footer />
