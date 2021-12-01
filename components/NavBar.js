@@ -31,9 +31,10 @@ const NavBar = (props) => {
           <div class="block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              class="flex items-center px-3 py-2 border border-gray-500 rounded-full"
+              // class="flex items-center px-3 py-2 border border-gray-500 rounded-full"
+              class="flex items-center m-2"
             >
-              <i className="mdi mdi-menu text-xl text-yellow-300"></i>
+              <i className="mdi mdi-menu text-3xl text-yellow-300"></i>
             </button>
           </div>
 
