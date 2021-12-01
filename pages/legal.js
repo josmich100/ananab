@@ -84,19 +84,19 @@ export default function Terms() {
         url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
       </style>
 
-      <main className="m-5">
-        <NavBar
-          //   background="bg-gray-800"
-          children={[
-            <Links name="Home" dir="/" active="text-yellow-300" />,
-            <Links name="Terms" dir="#terms" />,
-            <Links name="Privacy" dir="#privacy" />,
-          ]}
-        />
+      <NavBar
+        background="#000"
+        children={[
+          <Links name="Home" dir="/" active="text-yellow-300" />,
+          <Links name="Terms" dir="#terms" />,
+          <Links name="Privacy" dir="#privacy" />,
+        ]}
+      />
 
+      <main className="mt-20 md:mt-40 h-screen mx-5">
         <div class="container mx-auto h-full">
           <div class="text-center px-3 lg:px-0">
-            <h1 class="my-2 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+            <h1 class="my-2 text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
               Legal
             </h1>
           </div>
@@ -104,7 +104,7 @@ export default function Terms() {
 
         <section id="terms" class="border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
+            <h2 class="w-full my-2 text-2xl md:text-3xl font-black leading-tight text-center">
               Terms
             </h2>
             <div class="w-full mb-4">
@@ -122,7 +122,7 @@ export default function Terms() {
               </h3>
             </div>
 
-            <h4 class="my-4 text-lg md:text-xl font-bold">Downloads</h4>
+            <h4 class="my-4 text-xl md:text-2xl font-bold">Downloads</h4>
             <p class="mt-2 text-lg md:text-xl">
               <a
                 href="OriginalTerms.pdf"
@@ -156,7 +156,7 @@ export default function Terms() {
 
         <section id="privacy" class="border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
+            <h2 class="w-full my-2 text-2xl md:text-3xl font-black leading-tight text-center">
               Privacy
             </h2>
             <div class="w-full mb-4">
@@ -174,7 +174,7 @@ export default function Terms() {
               </h3>
             </div>
 
-            <h4 class="my-4 text-lg md:text-xl font-bold">Downloads</h4>
+            <h4 class="my-4 text-xl md:text-2xl font-bold">Downloads</h4>
             <p class="mt-2 text-lg md:text-xl">
               <a
                 href="Privacy.pdf"

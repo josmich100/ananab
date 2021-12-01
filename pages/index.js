@@ -84,16 +84,16 @@ export default function Home() {
         url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
       </style>
 
-      <main className="m-5">
-        <NavBar
-          //   background="bg-gray-800"
-          children={[
-            <Links name="Home" dir="/" active="text-yellow-300" />,
-            <Links name="About" dir="#about" />,
-            <Links name="Contact" dir="#contact" />,
-          ]}
-        />
+      <NavBar
+        background="bg-nav-black"
+        children={[
+          <Links name="Home" dir="/" active="text-yellow-300" />,
+          <Links name="About" dir="#about" />,
+          <Links name="Contact" dir="#contact" />,
+        ]}
+      />
 
+      <main className="mt-20 md:mt-40 h-screen mx-5">
         <div class="container mx-auto h-full">
           <div class="text-center px-3 lg:px-0">
             <h1 class="my-2 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
@@ -196,8 +196,8 @@ export default function Home() {
 
         <section id="contact" class="border-b py-8">
           <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h2 class="w-full my-2 text-3xl md:text-4xl font-black leading-tight text-center">
-              Contact
+            <h2 class="w-full my-2 text-2xl md:text-3xl font-black leading-tight text-center">
+              Ask a Question
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -206,19 +206,19 @@ export default function Home() {
             <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
               <div class="flex-1 rounded-xl overflow-hidden shadow-xl p-4">
                 <div className="flex flex-col p-3 text-center">
-                  <h2 class="w-full text-2xl md:text-3xl font-bold md:text-sm pt-5 px-5">
+                  <h2 class="w-full text-xl md:text-2xl font-bold md:text-sm pt-5 px-5">
                     Contact Details
                   </h2>
                   <div className="flex -mx-3">
                     <div className="w-full px-3 mb-5">
-                      <h5 className="text-2xl font-bold mt-5">
+                      <h5 className="text-lg md:text-xl font-bold mt-5">
                         <i className="mdi mdi-phone"></i> Call/Text
                       </h5>
                       <a href="tel:+254700000000">
                         <p className="text-xl m-2">+254 700 000 000</p>
                       </a>
 
-                      <h5 className="text-2xl font-bold mt-5">
+                      <h5 className="text-lg md:text-xl font-bold mt-5">
                         <i className="mdi mdi-email"></i> Email
                       </h5>
                       <a href="mailto:ananabcabs@gmail.com">

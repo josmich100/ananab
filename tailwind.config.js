@@ -21,6 +21,10 @@ module.exports = {
         "hero-pattern": "url('/public/hero.svg')",
         "hero-back": "url('/public/hero-bg.svg')",
       },
+      colors: {
+        "nav-dark": "#000",
+        "nav-light": "#fff",
+      },
     },
   },
   images: {

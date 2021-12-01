@@ -16,7 +16,9 @@ const NavBar = (props) => {
     <div>
       <nav
         id="header"
-        class={`w-full ${props.background} z-30 top-0 py-1 lg:py-2`}
+        class={`fixed w-full ${
+          theme === "dark" ? "bg-nav-dark" : "bg-nav-light"
+        } z-50 top-0 py-1 lg:py-2`}
       >
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
           <div class="pl-4 flex items-center">
@@ -27,7 +29,7 @@ const NavBar = (props) => {
               <img
                 src="/logo1.png"
                 alt="Ananab"
-                class="h-10 lg:h-20 inline-block fill-current text-yellow-700"
+                class="h-10 lg:h-16 inline-block fill-current text-yellow-700"
               />
             </a>
           </div>

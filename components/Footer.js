@@ -19,7 +19,7 @@ export default function Footer() {
             <br />
             <br />
 
-            <p class="text-gray-500">Ananab Cabs &copy; 2021</p>
+            <p class="text-gray-500">&copy; 2021 Ananab Cabs</p>
           </div>
 
           <div class="flex-1">
@@ -61,7 +61,7 @@ export default function Footer() {
                   href="https://twitter.com/AnanabCabs"
                   class="font-light no-underline hover:underline hover:text-orange-500"
                 >
-                  <i className="mdi mdi-twitter text-blue-300"></i> Twitter
+                  <i className="mdi mdi-twitter text-blue-400"></i> Twitter
                 </a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">

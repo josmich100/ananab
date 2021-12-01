@@ -97,7 +97,9 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="rounded-lg shadow-xl flex flex-col px-8 py-8"
       >
-        <h5 className="text-3xl text-center font-bold">Contact Form</h5>
+        <h5 className="text-2xl md:text-3xl text-center font-bold">
+          Contact Form
+        </h5>
 
         <label htmlFor="name" className="text-gray-500 mt-8">
           Name <span className="text-red-500">*</span>
