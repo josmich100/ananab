@@ -93,7 +93,7 @@ export default function Home() {
         ]}
       />
 
-      <main className="mt-20 md:mt-40 h-screen mx-5">
+      <main className="mt-20 md:mt-40 mx-5">
         <div class="container mx-auto h-full">
           <div class="text-center px-3 lg:px-0">
             <h1 class="my-2 text-3xl md:text-4xl lg:text-6xl font-black leading-tight">
