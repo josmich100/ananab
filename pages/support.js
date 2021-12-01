@@ -85,7 +85,7 @@ export default function Home() {
       </style>
 
       <NavBar
-        background="#000"
+        // background="bg-gray-800"
         children={[
           <Links name="Home" dir="/" active="text-yellow-300" />,
           <Links name="How To" dir="#howto" />,

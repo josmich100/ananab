@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import Links from "./Links";
 
 const NavBar = (props) => {
   const data = props.children;
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const handleToggle = () => {
-    setNavbarOpen((prev) => !prev);
-  };
-
   const { theme, setTheme } = useTheme();
 
   return (
@@ -17,7 +11,7 @@ const NavBar = (props) => {
       <nav
         id="header"
         class={`fixed w-full ${
-          theme === "dark" ? "bg-nav-dark" : "bg-nav-light"
+          theme === "light" ? "bg-nav-light" : "bg-nav-dark"
         } z-50 top-0 py-1 lg:py-2`}
       >
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
