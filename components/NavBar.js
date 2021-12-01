@@ -14,16 +14,16 @@ const NavBar = (props) => {
           theme === "light" ? "bg-nav-light" : "bg-nav-dark"
         } z-50 top-0 py-1 lg:py-2`}
       >
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 p-1 lg:py-2">
           <div class="pl-4 flex items-center">
             <a
-              class="text-white no-underline hover:no-underline font-bold text-xl lg:text-3xl"
+              class="text-white no-underline hover:no-underline font-bold text-xl lg:text-2xl"
               href="/"
             >
               <img
                 src="/logo1.png"
                 alt="Ananab"
-                class="h-10 lg:h-16 inline-block fill-current text-yellow-700"
+                class="h-8 lg:h-16 inline-block fill-current text-yellow-700"
               />
             </a>
           </div>
@@ -32,9 +32,9 @@ const NavBar = (props) => {
             <button
               id="nav-toggle"
               // class="flex items-center px-3 py-2 border border-gray-500 rounded-full"
-              class="flex items-center m-2"
+              class="flex items-center"
             >
-              <i className="mdi mdi-menu text-3xl text-yellow-300"></i>
+              <i className="mdi mdi-menu text-2xl text-yellow-300"></i>
             </button>
           </div>
 

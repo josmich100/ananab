@@ -93,9 +93,9 @@ export default function Home() {
         ]}
       />
 
-      <main className="mt-20 md:mt-40 h-screen mx-5">
-        <div class="container mx-auto">
-          <div class="text-center px-3 lg:px-0">
+      <main className="mt-20 md:mt-40 mx-5">
+        <div class="container mx-auto h-full">
+          <div class="text-center px-3 lg:px-0 mb-10">
             <h1 class="my-2 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
               Ananab Cabs
             </h1>
@@ -113,7 +113,7 @@ export default function Home() {
 
           <div class="flex items-center w-full mx-auto content-end">
             <img
-              class="flex flex-1 m-6 md:px-0 md:m-12 w-1/2 rounded shadow-xl"
+              class="flex flex-1 m-3 md:px-0 md:m-6 w-1/2 rounded shadow-xl"
               src="driver-door.jpg"
             />
           </div>
