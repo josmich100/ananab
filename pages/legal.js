@@ -84,13 +84,13 @@ export default function Terms() {
         url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
       </style>
 
-      <main>
+      <main className="m-5">
         <NavBar
           //   background="bg-gray-800"
           children={[
             <Links name="Home" dir="/" active="text-yellow-300" />,
-            <Links name="About" dir="about" />,
-            <Links name="Contact" dir="contact" />,
+            <Links name="Terms" dir="#terms" />,
+            <Links name="Privacy" dir="#privacy" />,
           ]}
         />
 
@@ -112,7 +112,7 @@ export default function Terms() {
             </div>
 
             <div class="flex flex-wrap">
-              <h3 class="my-4 text-lg md:text-xl text-center">
+              <h3 class="m-3 text-lg md:text-xl text-center">
                 Ananab is a company developed to curb the technology gap in
                 providing innovative ideas to suit public demands. It was
                 established out of a desire to provide instant transport
@@ -164,7 +164,7 @@ export default function Terms() {
             </div>
 
             <div class="flex flex-wrap">
-              <h3 class="my-4 text-lg md:text-xl text-center">
+              <h3 class="m-3 text-lg md:text-xl text-center">
                 Ananab is a company developed to curb the technology gap in
                 providing innovative ideas to suit public demands. It was
                 established out of a desire to provide instant transport

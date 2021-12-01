@@ -7,7 +7,7 @@ export default function Footer() {
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex-1 mb-6">
             <a
-              class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+              class="text-white no-underline hover:no-underline font-bold text-2xl md:text-4xl"
               href="/"
             >
               <img
@@ -52,7 +52,7 @@ export default function Footer() {
                   href="#"
                   class="font-light no-underline hover:underline hover:text-orange-500"
                 >
-                  <i className="mdi mdi-facebook text-blue-700"></i> Facebook
+                  <i className="mdi mdi-facebook text-blue-500"></i> Facebook
                 </a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -61,7 +61,7 @@ export default function Footer() {
                   href="https://twitter.com/AnanabCabs"
                   class="font-light no-underline hover:underline hover:text-orange-500"
                 >
-                  <i className="mdi mdi-twitter text-blue-500"></i> Twitter
+                  <i className="mdi mdi-twitter text-blue-300"></i> Twitter
                 </a>
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">

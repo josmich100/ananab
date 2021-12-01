@@ -109,7 +109,7 @@ export default function ContactForm() {
             setName(e.target.value);
           }}
           name="name"
-          className="py-2 pl-4 rounded my-2"
+          className="py-2 pl-4 rounded-xl border my-2"
         />
         {errors?.name && <p className="text-red-500">Name cannot be empty.</p>}
 
@@ -123,7 +123,7 @@ export default function ContactForm() {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
-          className="py-2 pl-4 rounded my-2"
+          className="py-2 pl-4 rounded-xl border my-2"
         />
         {errors?.email && (
           <p className="text-red-500">Email cannot be empty.</p>
@@ -139,7 +139,7 @@ export default function ContactForm() {
           onChange={(e) => {
             setSubject(e.target.value);
           }}
-          className="py-2 pl-4 rounded my-2"
+          className="py-2 pl-4 rounded-xl border my-2"
         />
         {errors?.subject && (
           <p className="text-red-500">Subject cannot be empty.</p>
@@ -154,7 +154,7 @@ export default function ContactForm() {
           onChange={(e) => {
             setMessage(e.target.value);
           }}
-          className="py-2 pl-4 rounded my-2"
+          className="py-2 pl-4 rounded-xl border my-2"
           rows={5}
         ></textarea>
         {errors?.message && (

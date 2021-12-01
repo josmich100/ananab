@@ -84,13 +84,13 @@ export default function Home() {
         url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')
       </style>
 
-      <main>
+      <main className="m-5">
         <NavBar
           //   background="bg-gray-800"
           children={[
             <Links name="Home" dir="/" active="text-yellow-300" />,
-            <Links name="About" dir="about" />,
-            <Links name="Contact" dir="contact" />,
+            <Links name="About" dir="#about" />,
+            <Links name="Contact" dir="#contact" />,
           ]}
         />
 
@@ -102,14 +102,10 @@ export default function Home() {
             <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
               Comfortable, Fast & Efficient
             </p>
-            <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
-              Share this app with your loved ones who would love to use our
-              services... Share this with love for awesome services...
-            </p>
 
             <a
               href="#about"
-              class="mx-auto lg:mx-0 bg-gray-700 hover:bg-gray-800 text-lg text-white font-extrabold rounded py-3 px-6 shadow-lg w-32"
+              class="mx-auto lg:mx-0 bg-gray-700 hover:bg-gray-800 text-lg text-white font-bold rounded py-2 px-4 shadow-lg w-32"
             >
               Learn More
             </a>
@@ -125,7 +121,7 @@ export default function Home() {
 
         <section id="about" class="border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
-            <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
+            <h2 class="w-full my-2 text-3xl md:text-4xl font-black leading-tight text-center">
               About
             </h2>
             <div class="w-full mb-4">
@@ -133,7 +129,7 @@ export default function Home() {
             </div>
 
             <div class="flex flex-wrap">
-              <h3 class="my-4 text-lg md:text-xl text-center">
+              <h3 class="m-3 text-lg md:text-xl text-center">
                 Ananab is a company developed to curb the technology gap in
                 providing innovative ideas to suit public demands. It was
                 established out of a desire to provide instant transport
@@ -143,10 +139,10 @@ export default function Home() {
               </h3>
 
               <div class="w-5/6 sm:w-1/2 p-6">
-                <h3 class="text-3xl font-bold leading-none mb-3">
+                <h3 class="text-2xl md:text-3xl font-bold leading-none mb-3">
                   Earn As You Drive
                 </h3>
-                <p class="text-lg mb-8">
+                <p class="text-lg md:text-xl mb-8">
                   Ananab is partnering with individuals who desire to make a
                   living by picking clients and dropping them at their desired
                   points. Ananab will provide its clients (passengers) to our
@@ -176,10 +172,10 @@ export default function Home() {
               </div>
               <div class="w-full sm:w-1/2 p-6 mt-6">
                 <div class="align-middle">
-                  <h3 class="text-3xl font-bold leading-none mb-3">
+                  <h3 class="text-2xl md:text-3xl font-bold leading-none mb-3">
                     Earn By Renting Your Car
                   </h3>
-                  <p class="text-lg mb-8">
+                  <p class="text-lg md:text-xl mb-8">
                     Ananab is offering opportunities to individuals who wish to
                     rent out their vehicles to our clients to earn money.
                     <br />
@@ -252,9 +248,13 @@ export default function Home() {
             <div class="h-1 mx-auto w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
 
-          <h3 class="my-4 text-3xl font-extrabold">
+          <h3 class="m-3 text-3xl font-extrabold">
             Ananab: Comfortable, Fast & Efficient
           </h3>
+          <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
+            Share this app with your loved ones who would love to use our
+            services... Share this with love for awesome services...
+          </p>
         </section>
 
         <Footer />
