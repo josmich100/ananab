@@ -14,7 +14,7 @@ const NavBar = (props) => {
           theme === "light" ? "bg-nav-light" : "bg-nav-dark"
         } z-50 top-0 py-1 lg:py-2`}
       >
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 p-1 lg:py-2">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 p-2 lg:py-3">
           <div class="pl-4 flex items-center">
             <a
               class="text-white no-underline hover:no-underline font-bold text-xl lg:text-2xl"
@@ -39,7 +39,7 @@ const NavBar = (props) => {
           </div>
 
           <div
-            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 p-4 lg:p-0 z-20"
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block lg:mt-0 p-2 lg:p-1 z-20"
             id="nav-content"
           >
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
