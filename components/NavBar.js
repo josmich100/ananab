@@ -86,10 +86,16 @@ const NavBar = (props) => {
 
             <a
               href="#"
-              class="bg-gray-700 hover:bg-gray-800 text-lg text-white rounded-full p-2 h-10 w-10 flex items-center justify-center"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              class={`bg-gray-700 hover:bg-gray-800 rounded-full p-2 h-10 w-10 flex items-center justify-center`}
+              onClick={() => {
+                setTheme(theme === "dark" ? "light" : "dark");
+              }}
             >
-              <i className="mdi mdi-sun text-2xl"></i>
+              {theme === "dark" ? (
+                <i className="mdi mdi-moon-waxing-crescent text-2xl text-white z-10"></i>
+              ) : (
+                <i className="mdi mdi-white-balance-sunny text-2xl text-yellow-300 z-10"></i>
+              )}
             </a>
           </div>
         </div>

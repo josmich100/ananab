@@ -125,7 +125,7 @@ export default function Terms() {
             <h4 class="my-4 text-lg md:text-xl font-bold">Downloads</h4>
             <p class="mt-2 text-lg md:text-xl">
               <a
-                href="OriginalPDF.pdf"
+                href="OriginalTerms.pdf"
                 class="text-yellow-400 text-lg font-bold hover:underline"
                 download
               >
