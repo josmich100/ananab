@@ -37,7 +37,7 @@ const NavBar = (props) => {
               id="nav-toggle"
               class="flex items-center px-3 py-2 border border-gray-500 rounded-full"
             >
-              <i className="mdi mdi-menu text-2xl text-yellow-300"></i>
+              <i className="mdi mdi-menu text-xl text-yellow-300"></i>
             </button>
           </div>
 
