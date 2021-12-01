@@ -91,10 +91,11 @@ const NavBar = (props) => {
                 setTheme(theme === "dark" ? "light" : "dark");
               }}
             >
-              {theme === "dark" ? (
-                <i className="mdi mdi-moon-waxing-crescent text-2xl text-white z-10"></i>
-              ) : (
+              {theme === "light" && (
                 <i className="mdi mdi-white-balance-sunny text-2xl text-yellow-300 z-10"></i>
+              )}
+              {theme === "dark" && (
+                <i className="mdi mdi-moon-waxing-crescent text-2xl text-white z-10"></i>
               )}
             </a>
           </div>

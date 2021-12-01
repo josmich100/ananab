@@ -1,80 +1,187 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
 
-const ContactForm = ({ errorMessage, onSubmit }) => (
-  <form className="flex flex-col p-10" onSubmit={onSubmit}>
-    <h5 className="text-3xl text-center font-bold">Contact Form</h5>
-    <div class="flex -mx-3">
-      <div class="w-full px-3 mb-5">
-        <label for="" class="text-xs font-semibold px-1">
-          Name
+export default function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  //   Form validation
+  const [errors, setErrors] = useState({});
+
+  //   Setting button text
+  const [buttonText, setButtonText] = useState("Send");
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (name.length <= 0) {
+      tempErrors["name"] = true;
+      isValid = false;
+    }
+    if (email.length <= 0) {
+      tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (subject.length <= 0) {
+      tempErrors["subject"] = true;
+      isValid = false;
+    }
+    if (message.length <= 0) {
+      tempErrors["message"] = true;
+      isValid = false;
+    }
+
+    setErrors({ ...tempErrors });
+    console.log("errors", errors);
+    return isValid;
+  };
+
+  //   const [form, setForm] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let data = {
+      name,
+      email,
+      subject,
+      message,
+    };
+
+    let isValidForm = handleValidation();
+
+    if (isValidForm) {
+      setButtonText("Sending");
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText("Send");
+
+        // Reset form fields
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      setButtonText("Send");
+      // Reset form fields
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSubject("");
+    }
+    console.log(name, email, subject, message);
+  };
+
+  return (
+    <div>
+      <form
+        onSubmit={handleSubmit}
+        className="rounded-lg shadow-xl flex flex-col px-8 py-8"
+      >
+        <h5 className="text-3xl text-center font-bold">Contact Form</h5>
+
+        <label htmlFor="name" className="text-gray-500 mt-8">
+          Name <span className="text-red-500">*</span>
         </label>
-        <div class="flex">
-          <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-            <i class="mdi mdi-account-outline text-gray-400 text-lg"></i>
-          </div>
-          <input
-            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-500"
-            type="text"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-        </div>
-      </div>
-    </div>
-    <div class="flex -mx-3">
-      <div class="w-full px-3 mb-5">
-        <label for="" class="text-xs font-semibold px-1">
-          Email Address
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          name="name"
+          className="py-2 pl-4 rounded my-2"
+        />
+        {errors?.name && <p className="text-red-500">Name cannot be empty.</p>}
+
+        <label htmlFor="email" className="text-gray-500 mt-4">
+          E-mail <span className="text-red-500">*</span>
         </label>
-        <div class="flex">
-          <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-            <i class="mdi mdi-email-outline text-gray-400 text-lg"></i>
-          </div>
-          <input
-            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-500"
-            type="email"
-            name="email"
-            placeholder="Your email address"
-            required
-          />
-        </div>
-      </div>
-    </div>
-    <div class="flex -mx-3">
-      <div class="w-full px-3 mb-5">
-        <label for="" class="text-xs font-semibold px-1">
-          Message
+        <input
+          type="email"
+          name="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          className="py-2 pl-4 rounded my-2"
+        />
+        {errors?.email && (
+          <p className="text-red-500">Email cannot be empty.</p>
+        )}
+
+        <label htmlFor="subject" className="text-gray-500 mt-4">
+          Subject <span className="text-red-500">*</span>
         </label>
-        <div class="flex">
-          <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-            <i class="mdi mdi-comment-outline text-gray-400 text-lg"></i>
-          </div>
-          <textarea
-            className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-500"
-            name="message"
-            placeholder="Your message"
-            required
-          ></textarea>
+        <input
+          type="text"
+          name="subject"
+          value={subject}
+          onChange={(e) => {
+            setSubject(e.target.value);
+          }}
+          className="py-2 pl-4 rounded my-2"
+        />
+        {errors?.subject && (
+          <p className="text-red-500">Subject cannot be empty.</p>
+        )}
+
+        <label htmlFor="message" className="text-gray-500 mt-4">
+          Message <span className="text-red-500">*</span>
+        </label>
+        <textarea
+          name="message"
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+          className="py-2 pl-4 rounded my-2"
+          rows={5}
+        ></textarea>
+        {errors?.message && (
+          <p className="text-red-500">Message body cannot be empty.</p>
+        )}
+
+        <div className="flex flex-row items-center justify-start">
+          <button
+            type="submit"
+            className="px-10 mt-8 py-2 bg-gray-700 hover:bg-gray-800 text-white font-bold rounded-md text-lg flex flex-row items-center"
+          >
+            {buttonText}
+          </button>
         </div>
-      </div>
+        <div className="text-left">
+          {showSuccessMessage && (
+            <p className="text-green-500 font-semibold text-sm my-2">
+              Thank you! Your message has been delivered.
+            </p>
+          )}
+          {showFailureMessage && (
+            <p className="text-red-500">
+              Oops! Something went wrong, please try again.
+            </p>
+          )}
+        </div>
+      </form>
     </div>
-
-    <button
-      type="submit"
-      className="mx-auto lg:mx-0 bg-gray-700 hover:bg-gray-800 text-white text-lg font-extrabold rounded py-2 px-4 shadow-lg"
-    >
-      <a href="register2">Send Message</a>
-    </button>
-
-    {errorMessage && <p className="text-red-500 m-1">{errorMessage}</p>}
-  </form>
-);
-
-export default ContactForm;
-
-ContactForm.propTypes = {
-  errorMessage: PropTypes.string,
-  onSubmit: PropTypes.func,
-};
+  );
+}
