@@ -47,7 +47,7 @@ const NavBar = (props) => {
             </ul>
 
             <a
-              href="#"
+              href="javascript:void(0);"
               class={`bg-gray-700 hover:bg-gray-800 rounded-full p-2 h-10 w-10 flex items-center justify-center`}
               onClick={() => {
                 setTheme(theme === "dark" ? "light" : "dark");
