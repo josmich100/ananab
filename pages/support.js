@@ -123,7 +123,7 @@ export default function Home() {
             </div>
 
             <h4 class="my-4 text-xl md:text-2xl font-bold">Downloads</h4>
-            <p class="mt-2 text-lg md:text-xl">
+            {/* <p class="mt-2 text-lg md:text-xl">
               <a
                 href="CustomerManual.pdf"
                 class="text-yellow-400 text-lg font-bold hover:underline"
@@ -132,6 +132,7 @@ export default function Home() {
                 Customers' Manual
               </a>
             </p>
+
             <p class="mt-2 text-lg md:text-xl">
               <a
                 href="DriverManual.pdf"
@@ -141,6 +142,7 @@ export default function Home() {
                 Drivers' Manual
               </a>
             </p>
+
             <p class="mt-2 text-lg md:text-xl">
               <a
                 href="RenterManual.pdf"
@@ -149,7 +151,7 @@ export default function Home() {
               >
                 Renters' Manual
               </a>
-            </p>
+            </p> */}
           </div>
         </section>
 

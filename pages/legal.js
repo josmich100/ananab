@@ -123,7 +123,7 @@ export default function Terms() {
             </div>
 
             <h4 class="my-4 text-xl md:text-2xl font-bold">Downloads</h4>
-            <p class="mt-2 text-lg md:text-xl">
+            {/* <p class="mt-2 text-lg md:text-xl">
               <a
                 href="OriginalTerms.pdf"
                 class="text-yellow-400 text-lg font-bold hover:underline"
@@ -142,6 +142,7 @@ export default function Terms() {
                 Drivers' Terms
               </a>
             </p>
+
             <p class="mt-2 text-lg md:text-xl">
               <a
                 href="RentalTerms.pdf"
@@ -150,7 +151,7 @@ export default function Terms() {
               >
                 Rental Terms
               </a>
-            </p>
+            </p> */}
           </div>
         </section>
 
@@ -175,7 +176,7 @@ export default function Terms() {
             </div>
 
             <h4 class="my-4 text-xl md:text-2xl font-bold">Downloads</h4>
-            <p class="mt-2 text-lg md:text-xl">
+            {/* <p class="mt-2 text-lg md:text-xl">
               <a
                 href="Privacy.pdf"
                 class="text-yellow-400 text-lg font-bold hover:underline"
@@ -183,7 +184,7 @@ export default function Terms() {
               >
                 Privacy Statement
               </a>
-            </p>
+            </p> */}
           </div>
         </section>
 
