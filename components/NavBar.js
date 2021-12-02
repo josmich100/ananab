@@ -11,7 +11,7 @@ const NavBar = (props) => {
       <nav
         id="header"
         class={`fixed w-full ${
-          theme === "light" ? "bg-nav-light" : "bg-nav-dark"
+          theme === "dark" ? "bg-nav-dark" : "bg-nav-light"
         } z-50 top-0 py-1 lg:py-2`}
       >
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 p-2 lg:py-3">
@@ -48,16 +48,20 @@ const NavBar = (props) => {
 
             <a
               href="javascript:void(0);"
-              class={`bg-gray-700 hover:bg-gray-800 rounded-full p-2 h-10 w-10 flex items-center justify-center`}
+              class={`${
+                theme === "dark"
+                  ? "bg-white hover:bg-gray-100"
+                  : "bg-gray-700 hover:bg-gray-800"
+              } rounded-full p-2 h-10 w-10 flex items-center justify-center`}
               onClick={() => {
                 setTheme(theme === "dark" ? "light" : "dark");
               }}
             >
               {theme === "light" && (
-                <i className="mdi mdi-white-balance-sunny text-2xl text-yellow-300"></i>
+                <i className="mdi mdi-moon-waxing-crescent text-2xl text-white"></i>
               )}
               {theme === "dark" && (
-                <i className="mdi mdi-moon-waxing-crescent text-2xl text-white"></i>
+                <i className="mdi mdi-white-balance-sunny text-2xl text-yellow-300"></i>
               )}
             </a>
           </div>

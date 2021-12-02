@@ -13,14 +13,15 @@ module.exports = {
       typography: (theme) => ({
         dark: {
           css: {
+            background: "black",
             color: "white",
           },
         },
       }),
-      backgroundImage: {
-        "hero-pattern": "url('/public/hero.svg')",
-        "hero-back": "url('/public/hero-bg.svg')",
-      },
+      // backgroundImage: {
+      //   "hero-pattern": "url('/public/hero.svg')",
+      //   "hero-back": "url('/public/hero-bg.svg')",
+      // },
       colors: {
         "nav-dark": "#000",
         "nav-light": "#fff",
