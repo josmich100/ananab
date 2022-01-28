@@ -75,9 +75,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>ANANAB</title>
+        <title>Ananab | Comfort & Convenience Is Just A Call Away</title>
         <meta name="description" content="Ananab official website" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <style>
         @import
@@ -97,10 +97,10 @@ export default function Home() {
         <div class="container mx-auto h-full">
           <div class="text-center px-3 lg:px-0 mb-10">
             <h1 class="my-2 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-              Ananab Cabs
+              Ananab
             </h1>
             <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
-              Comfortable, Fast & Efficient
+              Comfort & Convenience Is Just A Call Away
             </p>
 
             <a
@@ -126,69 +126,30 @@ export default function Home() {
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-
-            <div class="flex flex-wrap">
-              <h3 class="m-3 text-lg md:text-xl text-center">
-                Ananab is a company developed to curb the technology gap in
-                providing innovative ideas to suit public demands. It was
-                established out of a desire to provide instant transport
-                services by a click or touch to offer new opportunities to the
-                desiring public to meet demand and control expectation hence
-                making public transport reliable.
-              </h3>
-
-              <div class="w-5/6 sm:w-1/2 p-6">
-                <h3 class="text-2xl md:text-3xl font-bold leading-none mb-3">
-                  Earn As You Drive
-                </h3>
-                <p class="text-lg md:text-xl mb-8">
-                  Ananab is partnering with individuals who desire to make a
-                  living by picking clients and dropping them at their desired
-                  points. Ananab will provide its clients (passengers) to our
-                  partners (drivers) at demand.
-                  <br />
-                  <br />
-                  Images from:
-                  <a
-                    class="text-orange-500 underline"
-                    href="https://undraw.co/"
-                  >
-                    undraw.co
-                  </a>
-                </p>
-              </div>
-              <div class="w-full sm:w-1/2 p-6">
-                <img
-                  src="taxi-driver.jpg"
-                  class="w-full rounded-lg shadow-lg"
-                />
-              </div>
+              <p class="text-lg md:text-xl text-center my-8">
+                Ananab is an ananym of banana, a major symbol of Gusii land.
+                <br />
+                Ananab is a taxi app that uses the modern taxi model to provide
+                transport services. Unlike the traditional taxi model, which requires clients to search for taxis manually
+              </p>
             </div>
 
             <div class="flex flex-wrap flex-col-reverse sm:flex-row">
               <div class="w-full sm:w-1/2 p-6 mt-6">
-                <img src="car-deal.jpg" class="w-full rounded-lg shadow-lg" />
-              </div>
-              <div class="w-full sm:w-1/2 p-6 mt-6">
                 <div class="align-middle">
                   <h3 class="text-2xl md:text-3xl font-bold leading-none mb-3">
-                    Earn By Renting Your Car
+                    Earn As You Drive
                   </h3>
                   <p class="text-lg md:text-xl mb-8">
-                    Ananab is offering opportunities to individuals who wish to
-                    rent out their vehicles to our clients to earn money.
-                    <br />
-                    <br />
-                    Images from:
-                    <a
-                      class="text-orange-500 underline"
-                      href="https://undraw.co/"
-                    >
-                      undraw.co
-                    </a>
+                    Ananab is partnering with individuals who desire to make a
+                    living by picking clients and dropping them at their desired
+                    points. Ananab will provide its clients (passengers) to our
+                    partners (drivers) at demand.
                   </p>
                 </div>
+              </div>
+              <div class="w-full sm:w-1/2 p-6 mt-6">
+                <img src="car-deal.jpg" class="w-full rounded-lg shadow-lg" />
               </div>
             </div>
           </div>
@@ -242,18 +203,19 @@ export default function Home() {
 
         <section class="gradient w-full mx-auto text-center pt-6 pb-12 border-b">
           <h2 class="w-full my-2 text-2xl md:text-4xl font-black leading-tight text-center">
-            Call to Action
+            Download the App today
           </h2>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
 
           <h3 class="m-3 text-3xl font-extrabold">
-            Ananab: Comfortable, Fast & Efficient
+            Ananab: Comfort & Convenience Is Just A Call Away
           </h3>
           <p class="leading-normal text-base md:text-xl lg:text-2xl mb-8">
+            Available on Google Play Store and Apple Store <br />
             Share this app with your loved ones who would love to use our
-            services... Share this with love for awesome services...
+            services...
           </p>
         </section>
 

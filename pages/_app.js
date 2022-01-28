@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="dark">
+    <ThemeProvider defaultTheme="light">
       <Component {...pageProps} />
     </ThemeProvider>
   );
